@@ -1,4 +1,19 @@
-# Paycore & Patika.Dev Final Project
+# Paycore & Patika.Dev .Net/.Net Core Bootcamp Final Project
+
+## Project Details
+
+Signin
+
+Login
+
+Account
+
+Category
+
+Product
+
+
+Used in this project PostgreSQL Database and Nhibernate Orm Tool.
 
 #### Book Table Columns
 ![Ekran Görüntüsü (105)](https://user-images.githubusercontent.com/66038847/191615736-bf30bd42-fb80-4754-88bc-41ffbab71011.png)
