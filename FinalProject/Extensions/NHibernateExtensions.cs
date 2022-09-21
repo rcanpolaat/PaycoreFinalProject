@@ -9,13 +9,6 @@ namespace FinalProject.Extensions
 {
     public static class NHibernateExtensions
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="services"></param>
-        /// <param name="connectionString"></param>
-        /// <returns></returns>
-
         public static IServiceCollection AddNHibernatePosgreSql(this IServiceCollection services, string connectionString)
         {
             var mapper = new ModelMapper();

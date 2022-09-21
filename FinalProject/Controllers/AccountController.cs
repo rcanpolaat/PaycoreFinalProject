@@ -24,13 +24,17 @@ namespace FinalProject.Controllers
             this.mapper = mapper;
         }
 
+        // If IsOfferable field is "true", you can see is offerable book in here
+
         [Authorize]
-        [HttpGet]
+        [HttpGet("GetOfferableBook")]
         public BaseResponse<IEnumerable<BookDto>> GetAll()
         {
             var response = bookService.GetAll();
             return response;
         }
+
+        //Book buying field
 
         [Authorize]
         [HttpPost("BuyBook")]

@@ -20,6 +20,9 @@ namespace FinalProject
             this.mapper = mapper;
         }
 
+        //All methods can be called in here
+        //Authorized all methods in BaseController
+
         [Authorize]
         [HttpGet]
         public virtual IActionResult GetAll()

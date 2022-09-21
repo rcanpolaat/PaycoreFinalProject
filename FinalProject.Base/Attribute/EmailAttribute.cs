@@ -13,7 +13,7 @@ namespace FinalProject.Base
                 if (value is null)
                     return new ValidationResult("Email field must not be empty .");
 
-
+                //Email for sign in must be appropriate this regex
                 if (!Regex.IsMatch(value.ToString(), @"^[^@\s]+@[^@\s]+\.(com|net|org|gov)$", RegexOptions.Compiled))
                     return new ValidationResult("Invalid Email field.");
 
