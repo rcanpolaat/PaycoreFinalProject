@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FinalProject.Base\FinalProject.Base.csproj" />
+    <ProjectReference Include="..\FinalProject.Data\FinalProject.Data.csproj" />
+    <ProjectReference Include="..\FinalProject.Dto\FinalProject.Dto.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.8" />
+  </ItemGroup>
+  
+</Project>
