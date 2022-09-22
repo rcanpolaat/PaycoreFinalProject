@@ -6,6 +6,7 @@ using FinalProject.Base;
 using AutoMapper;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Authorization;
+using System.Linq;
 
 namespace FinalProject.Controllers
 {
@@ -30,7 +31,9 @@ namespace FinalProject.Controllers
         [HttpGet("GetOfferableBook")]
         public BaseResponse<IEnumerable<BookDto>> GetAll()
         {
+            
             var response = bookService.GetAll();
+            response.Response.Where(x => x.IsOfferable == true).ToList();
             return response;
         }
 

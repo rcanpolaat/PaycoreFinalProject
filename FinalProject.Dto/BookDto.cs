@@ -33,5 +33,8 @@ namespace FinalProject.Dto
         [Required]
         public bool IsOfferable { get; set; }
 
+        [Required]
+        public bool IsSold { get; set; }
+
     }
 }
